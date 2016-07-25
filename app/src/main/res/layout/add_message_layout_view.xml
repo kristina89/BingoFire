@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/dialog_outside_padding"-->
+        <!--android:layout_marginRight="@dimen/dialog_outside_padding"-->
+        <!--android:layout_marginTop="@dimen/dialog_outside_padding"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:text="@string/select_chat_colon"/>-->
+
+    <Spinner
+        android:id="@+id/chatTopicsSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_intrinsic_padding"
+        android:layout_marginLeft="@dimen/dialog_outside_padding"
+        android:layout_marginRight="@dimen/dialog_outside_padding"
+        android:layout_marginBottom="@dimen/view_intrinsic_padding"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textMultiLine|textCapSentences"
+        android:background="@drawable/edit_text_on_focus_selector"
+        android:minHeight="50dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/message_text_edit_color"
+        android:hint="@string/add_message_hint"
+        android:gravity="top"
+        android:layout_marginLeft="@dimen/dialog_outside_padding"
+        android:layout_marginRight="@dimen/dialog_outside_padding"
+        android:layout_marginBottom="@dimen/view_intrinsic_padding"
+        android:padding="@dimen/view_intrinsic_padding"
+        android:maxLength="128"/>
+
+</LinearLayout>
